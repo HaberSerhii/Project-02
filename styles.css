@@ -1,0 +1,211 @@
+:root {
+  --banner-bg-1: url("./assets/main-banner-1.webp");
+  --banner-bg-2: url("./assets/main-banner-2.webp");
+  --banner-bg-3: url("./assets/main-banner-3.webp");
+  --banner-bg: var(--banner-bg-1);
+
+  --text-color-1: rgba(92, 60, 53, 1);
+  --text-color-2: rgba(110, 23, 29, 1);
+  --text-color-3: rgba(92, 60, 53, 1);
+  --text-color: var(--text-color-1);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  margin: 10px auto 100px auto;
+  padding: 0;
+  max-width: 600px;
+  border: 1px solid #000;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 35px;
+  padding: 15px 25px 93px 25px;
+  text-align: center;
+}
+
+.header-uppertitle {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.header-discount {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 66px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.menu-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.burger-item {
+  background-color: var(--text-color);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 655px;
+  margin: 0 0 0 75px;
+  background-color: #e4e4e6;
+  position: relative;
+}
+
+.main-banner-button {
+  position: absolute;
+  padding: 5px;
+  top: -25%;
+  left: -10%;
+  background-color: white;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-banner-button:hover {
+  background-color: var(--text-color);
+  color: white;
+}
+
+.main-bg-lines {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  left: -14.1%;
+  top: 30%;
+}
+.main-bg-lines-item {
+  width: 600px;
+  height: 40px;
+  background-color: var(--text-color);
+}
+.main-content-banner {
+  position: absolute;
+  width: 450px;
+  height: 665px;
+  background: var(--banner-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: -4%;
+  top: -12%;
+  padding: 35px 22px 45px 22px;
+}
+.main-banner-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  justify-content: flex-start;
+}
+.main-banner-title {
+  width: 283px;
+}
+.main-banner-secondtitle {
+  font-size: 22.53px;
+  line-height: 100%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.main-banner-undertitle-container {
+  position: absolute;
+  width: 220px;
+  top: 82%;
+  left: 5%;
+}
+.main-banner-undertirle {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  position: relative;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+.main-banner-undertirle:first-child {
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-banner-undertirle:nth-child(2) {
+  margin-bottom: 14px;
+}
+
+.main-banner-undertirle:first-child::before {
+  content: "•";
+  position: absolute;
+  left: 3%;
+  top: 15%;
+  font-size: 15px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 1);
+}
+.main-banner-undertitle-link {
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.main-banner-aside-description {
+  position: absolute;
+  width: 420px;
+  rotate: 270deg;
+  font-family: Roboto;
+  font-size: 14.06px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  top: 66%;
+  left: 50%;
+}
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 74px;
+  padding: 0px 0px 0px 25px;
+}
+
+.header-undertitle {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  padding: 30px 153px 30px 48px;
+  background-color: #e4e4e6;
+  width: 477px;
+}
